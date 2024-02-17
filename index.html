@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,184 +6,350 @@
     <title>Document</title>
 	<style>	
 	
-		header {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    	header {
 
     			display: flex;
     			width: 100%;
-   			height: 100% auto;
-    			background: rgb(51, 122, 51);
+   			    height: 500%;
+    			background: rgb(8, 27, 53);
+                font-family: sans-serif;
+                box-sizing: border-box;
+
 
 		}
 		.hlm{
 		    	width: 100%;
-    			height: 100% auto;
+    			height: 100%;
+                margin-left: 100px;
+                padding: 100px;
+
 		}
+        .nav {
+        width: 100%;
+        padding: 10px;
+        position: fixed;
+        margin-left: 00px;
+        display: flex;
+        background-color: rgb(9, 26, 126);
+        font-family: sans-serif;
+
+    }
+    .nav a {
+        text-decoration: none;
+        color: white;
+        float: left;
+        padding: 10px;
+        font-size: 12pt;
+        height: auto;
+        margin-left: 10px;
+    }
+    body{
+        background-color: transparent;
+
+    }
+    .nav a:hover{
+        color: rgb(79, 133, 214);
+    }
+    .nav-left{
+        float: left;
+    }
+
+        
 		.profile {
 			display: flex;
 
 		}
 		.foto img {
 
-    			margin-top: 150px;
-    			width: 315px;
-    			height: 300px;
-    			padding-left: 120px;
+    			margin-top: 55px;
+    			width: 350px;
+    			height: 400px;
+    			padding-left: 90px;
 
 		}
 
 		.perkenalan {
 
     			margin-top: 130px;
-    			font-size: 25px;
-    			padding-left: 80px;
-    			font-family: sans-serif;
+    			font-size: 25pt;
+    			margin-left: 50px;
+                margin-top: 60px;
+                color: grey;
 		}
+        .perkenalan h1{
+            color: white;
+            font-size: 25pt;
+        }
+        .perkenalan h2{
+            color: rgb(72, 130, 255);
+            font-size: 30pt;
+        }
+        .perkenalan h3{
+            color: white;
+            font-size: 25pt;
+        }
 		.ig{
-	    		margin-top: -20px;
+	    		margin-top: 15px;
+                padding-right:200px;
+                font-size: 15pt;
 		}
 		.deks{
 		    	display: flex;
 		}
-		.biodata {
-
-	    		margin-top: 80px;
-    			font-size: 30px;
-    			padding-left: 120px;
-    			font-family: sans-serif;
-		}
-		.kegiatan {
-
-    			margin-top: 80px;
-    			font-size: 30px;
-    			padding-left: 200px;
-    			font-family: sans-serif;
-		}
-		.deks2{
-    			display: flex;
-		}
-		.keterangan {
-
-    			margin-top: 25px;
-    			font-size: 30px;
-    			padding-left: 120px;
-    			font-family: sans-serif;
-		}
-		.education {
-
-    			margin-top: 30px;
-    			font-size: 30px;
-    			padding-left: 200px;
-    			font-family: sans-serif;
-		}
-        .biodata p{
-            color: white;
+        .github a {
+            margin-top: 10px;
+            display: flex;
+            color: #4e88c9;
+            padding-left: 30px;
+            font-size: 25pt;
+            text-decoration: none;
         }
-        .biodata h2{
-            color: rgb(18, 46, 18);
+    
+        /*biodata*/
+        .hlm2{
+             text-align: start;
+            
+             
+         }
+        
+        .row{
+            display: flex;
         }
-        .kegiatan p{
-            color: white;
+
+		.biodata{
+            width: 100%;
+            height: 300px;
+            background-color: #4e88c9;
+            display: flex;
+            font-family: sans-serif;
+            padding-left: 200px;
         }
-        .kegiatan h2{
-            color: rgb(18, 46, 18);
+		
+        .biodata h3{
+            font-size: 30pt;
+            color: rgb(6, 4, 17);
+            padding-top: 15px;
+            margin-top: 30px;
         }
-        .hobby p{
-            color: white;
+        .biodata h4{
+            font-size: 15pt;
+            margin-top: 25px;
+            color: beige;
+            margin-right: 30px;
+            margin-left: 10px;
+        }
+        
+        /*kegiatan*/
+    
+        
+        .expose{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(8, 27, 53);
+            display: flex;
+            font-family: sans-serif;
+            padding-left: 200px;
+        }
+
+        .expose h2{
+    		font-size: 30pt;
+            color: rgb(72, 130, 255);
+            padding-top: 20px;
+		}
+        .expose h4{
+            font-size: 15pt;
+            color: beige;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+
+        
+        
+        
+    
+    /*hobby & pendidikan*/
+    
+        .explore{
+            width: 100%;
+            height: 300px;
+            background-color: #4e88c9;
+            display: flex;
+            font-family: sans-serif;
+        }
+        
+         .hlm4{
+             text-align: start;
+             padding-left: 185px;
+             margin-top: 30px;
+             
+         }
+         .hobby{
+            padding-left: 25px;
+            margin-top: 10px;
         }
         .hobby h2{
-            color: rgb(18, 46, 18);
+            color: rgb(6, 4, 17);
+            font-size: 30pt;
+            margin-top: 20px;
+
         }
-        .keterangan p{color: white;}
-        .keterangan h2{
-            color: rgb(18, 46, 18);
+        .hobby h4{
+            font-size: 15pt;
+            color: beige;
+            margin-top: 35px;
+            margin-left: 10px;
         }
-        .education p{
-            color: white;
+        .sekolah{
+            padding-left: 300px;
+            margin-top: 25px;
         }
-        .education h2{
-            color: rgb(18, 46, 18);
+        .sekolah h2{
+            color: rgb(6, 4, 17);
+            font-size: 30pt;
+            padding-top: 10px;
         }
-        .perkenalan h2{
-            color: rgb(18, 46, 18);
+        .sekolah h4{
+            font-size: 10pt;
+            color: beige;
+            margin-top: 20px;
+            margin-left: 10px;
         }
 
-	</style>
+        /*keterangan*/
+        .hlm5{
+            width: 100%;
+            height: 300px;
+            text-align: start;
+            padding-left: 5px;
+        }
+         .keterangan{
+             width: 100%;
+             height: 400%;
+             background-color: rgb(8, 27, 53);
+             text-align: start;
+             padding-left: 5px;
+             font-family: sans-serif;
+         }
+         
+        .keterangan h2{
+            color: rgb(72, 130, 255);
+            font-size: 30pt;
+            margin-top: 20px;
+            margin-left: 195px;
+
+        }
+        .keterangan h4{
+            font-size: 15pt;
+            color: beige;
+            margin-top: 20px;
+            margin-left: 215px;
+        }
+</style>
 </head>
 <body>
+    <div class="nav">
+        <a href="#5">Keterangan</a>
+        <a href="#4">Pendidikan</a>
+        <a href="#3">Kegiatan</a>
+        <a href="#2">Biodata</a>
+        <a href="#1">Profil</a>
+    </div>
+    <br><br><br>
     <header>
         <div class="hlm">
             <div class="profile">
-                <div class="foto">
-                    <img src="awaa.png" alt="">
+                <div class="foto" id="1">
+                    <img src="awaa.png" alt="foto">
                 </div>
                 <div class="perkenalan">
-                            <h2>Hallo Semua, Saya <br>
-                            Nasywa Aristhawidya <br>
-                            dari Jurusan Pengembangan Perangkat Lunak <br>
-                            dan Gim</h2>
+                            <h1>Hallo Semua, Saya</h1>
+                            <h2>Nasywa Aristhawidya</h2>
+                            <h3>dari Jurusan Pengembangan Perangkat <br>
+                            Lunak dan Gim</h3>
                             <div class="ig">
-                            <a href="#"> ig : nasywa.4r </a>
+                            <a href="#">ig: nsywa.4r</a>
+                            </div> 
                             </div>
                 </div>
             </div>
-            <div class="deks">
+        </header>
+            <section>
+                <div class="hlm2">
                 <div class="biodata">
-    
-                    <h2>Biodata</h2>
-    
-                    <p> Perkenalkan nama saya Nasywa Aristhawidya<br>
-                        Saya sekolah di SMK SYAFI'I AKROM KOTA<br>
-                        PEKALONGAN<br>
-                        dan mengambil jurusan Peengembangan Perangkat<br>
-                        dan Gim.Saya tertarik dengan jurusan ini karena <br>
-                        sekarang teknologi itu sangat dibutuhkan.</p>
-                </div>
-                <div class="kegiatan">
-    
-                    <h2>kegiatan</h2>
-
-                    <p> A.MEDIA SMKSA <br>
-                    adalah organisasi media/lebih dikenal dengan <br>
-                    jurnalistik, disana saya banyak belajar <br>
-                    tentang kamera, mewawancara,saya mengikuti kegiatan ini <br>
-                    sejak kelas 10. Didalam organisasi ini saya <br>
-                    dapat belajar bagaimana kerja sama yang baik <br>
-                    dan memperluas pertemanan.</p>
+                    <div class="row">
+                        <div class="Biodata" id="2">
+                    <h3>Biodata</h3>
+                        <h4>Perkenalkan nama saya Nasywa Aristhawidya<br>
+                            Saya sekolah di SMK SYAFI'I AKROM KOTA PEKALONGAN<br>
+                            dan mengambil jurusan Pengembangan Perangkat Lunak dan Gim. <br>
+                            Saya tertarik dengan jurusan ini karenasekarang teknologi itu <br>
+                            sangat dibutuhkan.</h4>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="expose">
+            <div class="row">
+                <div class="hlm3" id="3">
+                    <h2>Kegiatan</h2>
+                    <br>
+                    <h4> A.MEDIA SMKSA <br>
+                        adalah organisasi media/lebih dikenal dengan jurnalistik,<br> 
+                        disana saya banyak belajar tentang kamera, mewawancara, <br>
+                        saya mengikuti kegiatan ini sejak kelas 10. <br> 
+                        Didalam organisasi ini saya dapat belajar bagaimana <br> 
+                        kerja sama yang baik dan memperluas pertemanan.</h4>
                 </div>
             </div>
-            <div class="deks2">
-                <div class="keterangan">
-    
-                    <h2>Keterangan</h2>
+            </div>
+        </section>
 
-                    <p> Dijurusan Pengembangan Perangkat Lunak dan Gim. <br>
-                        Saya mempelajari tentang HTML, <br>
-                    CSS,PHP dasar dan juga pembuatan <br>
-                    desain aplikasibsederhana di figma, saya <br>
-                    juga ingin lebih banyak beljar tentang <br>
-                    web developer agar untuk kedepannya <br>
-                    saya bisa dengan mudah mengerjakan <br>
-                    tugas yang bersangkutan dengan web. </p>
-                </div>
-                <div class="education">
-    
-                    <h2>Education</h2>
-
-                    <p> a.SDI YPI BINTARO dan SDN WARU 01<br>
-                        b.SMP Negeri 2 Parung <br>
-                        c.SMK Syafi'i Akrom Kota Pekalongan <br>
-                        </p>
-    
-                            <h2>Hobby</h2>
-        
-                            <p> a.Mendengarkan musik<br>
-                                b.Futsal <br>
-                                c.Membaca novel <br>
-                                </p>
-                        </div>
+        <section class="explore">
+            <div class="hlm4" id="4">
+                <div class="row">
+                    <div class="hobby">
+                        <h2>Hobby</h2>
+                        <h4>-MENDENGARKAN MUSIK <br> -FUTSAL <br> -MEMBACA NOVEL</h4>
+                    </div>
+                    <div class="sekolah">
+                        <h2>Pendidikan</h2>
+                        <h4>-TK AS-SAKINAH <br>
+                        -SDI YPI BINTARO & SDN WARU 01 <br>
+                        -SMP NEGERI 2 PARUNG <br>
+                        -SMK SYAFI'I AKROM</h4>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="keterangan">
+            <div class="hlm5" id="5">
+                <div class="row">
+                    <div class="keterangan">
+                        <h2>Keterangan</h2>
+
+                        <h4> Dijurusan Pengembangan Perangkat Lunak dan Gim. <br>
+                            Saya mempelajari tentang HTML, <br>
+                        CSS,PHP dasar dan juga pembuatan <br>
+                        desain aplikasibsederhana di figma, saya <br>
+                        juga ingin lebih banyak belajar tentang <br>
+                        web developer agar untuk kedepannya <br>
+                        saya bisa dengan mudah mengerjakan <br>
+                        tugas yang bersangkutan dengan web. </h4>
+                    </div>
+            </div>
+        </section>
     </header>
 </body>
 </html>
